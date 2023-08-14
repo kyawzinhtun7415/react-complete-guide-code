@@ -6,6 +6,7 @@ import './ExpenseItem.css';
 
 const ExpenseItem = (props) => {
   // function clickHandler() {}
+  // To make a change on React UI, u need useState()
   const [title, setTitle] = useState(props.title);
   console.log('ExpenseItem evaluated by React');
   
