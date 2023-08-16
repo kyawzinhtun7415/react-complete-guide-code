@@ -6,6 +6,8 @@ const AuthContext = React.createContext({
   onLogin: (email, password) => {}
 });
 
+// It makes a mew component "AuthContextProvider" out of original 
+// AuthContext.Provider 
 export const AuthContextProvider = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 

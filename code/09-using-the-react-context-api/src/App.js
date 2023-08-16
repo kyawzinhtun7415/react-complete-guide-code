@@ -27,13 +27,13 @@ function App() {
     localStorage.removeItem('isLoggedIn');
     setIsLoggedIn(false);
   };
-
+  // the value does not need to be specified but if you want dynamic value, it has to be
   return (
     <AuthContext.Provider
       value={{
         isLoggedIn: isLoggedIn,
       }}
-    >
+    > 
       <MainHeader onLogout={logoutHandler} />
       <main>
         {!isLoggedIn && <Login onLogin={loginHandler} />}

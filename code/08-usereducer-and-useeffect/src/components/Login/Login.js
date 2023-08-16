@@ -64,7 +64,7 @@ const Login = (props) => {
   }, [emailIsValid, passwordIsValid]);
 
   const emailChangeHandler = (event) => {
-    dispatchEmail({ type: 'USER_INPUT', val: event.target.value });
+    dispatchEmail({ type: 'USER_INPUT', val: event.target.value }); // dispatch Function for the reducer // action.type, action.val
 
     // setFormIsValid(
     //   event.target.value.includes('@') && passwordState.isValid
