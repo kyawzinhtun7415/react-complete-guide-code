@@ -4,7 +4,7 @@
 
 // Primitives
 
-let age: number;
+let age: number; // Number -> this will point to Number object in javascript instead of 'number' primitive
 
 age = 12;
 

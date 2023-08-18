@@ -58,7 +58,7 @@ function print(value: any) {
 
 // Generics
 
-function insertAtBeginning<T>(array: T[], value: T) {
+function insertAtBeginning<T>(array: T[], value: T) { // it knows that the T has to be the same throughout.
   const newArray = [value, ...array];
   return newArray;
 }
