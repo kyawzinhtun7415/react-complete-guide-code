@@ -21,7 +21,7 @@ class Users extends Component {
   toggleUsersHandler() {
     // this.state.showUsers = false; // NOT!
     this.setState((curState) => {
-      return { showUsers: !curState.showUsers };
+      return { showUsers: !curState.showUsers }; // react will merge the other states for you
     });
   }
 
